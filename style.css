@@ -1,0 +1,90 @@
+body {
+  background: hsla(0, 4%, 85%, 0.652);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.4s;
+}
+
+.countdown-container {
+  background: #fff;
+  padding: 32px 28px 31px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 340px;
+  height: 280px;
+}
+
+#bdayInput {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  margin-bottom: 12px;
+  outline: none;
+  transition: border 0.2s;
+}
+#bdayInput:focus {
+  border: 1.5px solid #0078d7;
+}
+
+button {
+  padding: 10px 22px;
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #005fa3;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+  font-family: monospace;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.countdown-timer span {
+  display: inline-block;
+  min-width: 32px;
+  text-align: center;
+  background: #e1f5fe;
+  color: #0078d7;
+  border-radius: 6px;
+  padding: 8px 0;
+  font-size: 1.3em;
+  margin-right: 4px;
+}
+
+#birthdayMsg {
+  margin-top: 18px;
+  color: #0078d7;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .countdown-container {
+    min-width: 90vw;
+    padding: 18px 6vw;
+  }
+  .countdown-timer {
+    gap: 8px;
+    font-size: 1em;
+  }
+}
